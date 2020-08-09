@@ -1,0 +1,18 @@
+Caesar Encrypt and Decrypt:
+
+PythonAssignment.py: This is the primary module for the encryption function. 
+Two primary methods:
+Rotate: rotates an array by a specified amount. E.g. [A, B, C] - k = 2 --> [B, C, A]
+Cipher: utilises the rotate method to rotate 3 lists containing upper case ASCII, lower case ASCII and special characters ASCII
+
+CaesarEncrypt.py: The primary file which takes user input for a message and can either use a randomly generated number or a user specified key to encrypt the given message
+
+CaesarDecrypt.py: Provide 3 different methods for decrypting a basic caesar ciphertext:
+
+1. Brute force, prints all possible plain texts for the user to determine which is most likely to be correct
+2. Chi-squared, tests all possible plaintexts and compares the frequency of each letter to the frequency of letters in the english language. I.e. it picks the plaintext that has the most occurrences of the letter 'e'
+3. Compare to english dictionary, cycles through the plaintexts and compares words to words in the english dictionary and when all words in the plaintext match words in the dictionary it returns the plaintext.
+
+Multilevel.py: provides the increased security of using multiple ciphers on one message. Each word can have a different key encryption. Also has a decrypt function which utilises the dictionary method.
+
+ListEdit.py: a short script I used to purge words that are less than 6 characters long from the wordlist/dictionary
